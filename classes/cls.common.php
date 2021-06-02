@@ -2,9 +2,9 @@
 class common
 {
     private $mdbhost = "localhost";
-    private $mdbname = "u328829917_biometric";
-    private $mdbuser = "u328829917_vickysoft1";
-    private $mdbpass = "Testing123";
+    private $mdbname = "";
+    private $mdbuser = "root";
+    private $mdbpass = "";
 
     public function __construct($dbcon)
     {
