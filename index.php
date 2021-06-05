@@ -195,6 +195,6 @@ $dataArrBuy = $Cobj->getCustomData('buyorsell',"*",'order by bName,bDate desc');
              
              
       </script>
-      <script src="js/mainjsfunction.js"></script>
+      <script src="js/mainfuncjs.js"></script>
    
 </html>
