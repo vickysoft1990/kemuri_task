@@ -5,7 +5,13 @@
 #MySQL Version Used: 10.4.15-MariaDB-cll-lve
 ############################################################################################################################
 Manual document attached for further clarifications.
-Demo link:
+Update demo link:
+http://codeomega.in/kemuri_task_oops_updated/
+
+Analysis Link smaple
+http://codeomega.in/kemuri_task_oops_updated/statistics.php?fromDate=2020-01-02&toDate=2021-06-18&compList=SD&flag=
+
+Old Demo link with Iframe:
 http://codeomega.in/kemuri_task_oops/
 ############################################################################################################################
 
