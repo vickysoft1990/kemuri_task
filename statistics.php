@@ -32,8 +32,7 @@ if($compList!='Error'){
         $diff = $later->diff($earlier)->format("%a");
         return $diff;
     }           
-   
-   ?>
+    ?>
 <?php include 'header.php';?>
 <body>
    <div class="container1"     style="padding-right: 15px; padding-left: 15px; margin-right: auto; "
@@ -50,6 +49,12 @@ if($compList!='Error'){
                         } 
                         ?>
                   </p>
+                  <tr>
+                     <th>Company Name : <?php echo $compList;?></th>
+                     <th>Between</th>
+                     <th><?php echo $fromDate;?></th>
+                     <th><?php echo $toDate;?></th>
+                  </tr>
                   <tr>
                      <th>Type</th>
                      <th>Date(Y-M-D)</th>
@@ -197,10 +202,10 @@ if($compList!='Error'){
 		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
     });
-    chart.render();  
-	    
+    chart.render();
+ 
     $('.userinfo').click(function(){
-       var dated = $(this).data('id');
+      var dated = $(this).data('id');
       var buyorsell = $(this).data('buy');
       var sName='<?php echo $compList; ?>';
       // AJAX request
@@ -217,8 +222,8 @@ if($compList!='Error'){
      });
     });
    });
-      
-     function drawChart() {
+   
+   function drawChart() {
      var data = new google.visualization.DataTable();
      data.addColumn('string', '');
      data.addColumn('number', '<?php echo $sName; ?>');
