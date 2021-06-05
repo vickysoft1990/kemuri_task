@@ -52,9 +52,9 @@ if($compList!='Error'){
                   </p>
                   <tr>
                      <th>Type</th>
-                     <th>Date</th>
-                     <th>Days</th>
-                     <th>Profit</th>
+                     <th>Date(Y-M-D)</th>
+                     <th>Days Count</th>
+                     <th>Profit/Share</th>
                   </tr>
                </thead>
                <tbody>
@@ -189,7 +189,7 @@ if($compList!='Error'){
 		text: "Price Analysis"
 	},
 	axisY: {
-		title: "Stock Price"
+		title: "<?php echo $compList." PRICE"  ; ?>"
 	},
 	data: [{
 		type: "column",
@@ -232,7 +232,7 @@ if($compList!='Error'){
                      title: 'Dates'
                   },
                   vAxis: {
-                     title: 'Stock Price'
+                     title: '<?php echo $compList." PRICE"  ; ?>'
                   },   
                   'width':550,
                   'height':550	  
@@ -253,4 +253,3 @@ else{
 echo "Data Not found!! Go back and find new search!!";
 }
 ?>
-
