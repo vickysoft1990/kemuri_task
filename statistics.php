@@ -197,12 +197,10 @@ if($compList!='Error'){
 		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
     });
-    chart.render();
- 
-   
+    chart.render();  
+	    
     $('.userinfo').click(function(){
-      
-      var dated = $(this).data('id');
+       var dated = $(this).data('id');
       var buyorsell = $(this).data('buy');
       var sName='<?php echo $compList; ?>';
       // AJAX request
@@ -213,15 +211,13 @@ if($compList!='Error'){
        success: function(response){ 
          // Add response in Modal body
          $('.modal-body').html(response);
-   
-         // Display Modal
+            // Display Modal
          $('#buyModal').modal('show'); 
        }
      });
     });
    });
-   
-   
+      
      function drawChart() {
      var data = new google.visualization.DataTable();
      data.addColumn('string', '');
@@ -241,12 +237,9 @@ if($compList!='Error'){
     chart.draw(data, options);
     }
     google.charts.setOnLoadCallback(drawChart);
-   	
 </script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
 </html>
-
 <?php
 }
 else{
